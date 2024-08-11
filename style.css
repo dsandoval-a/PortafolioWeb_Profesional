@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #08406F;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #04BADE; /* Header en color secundario */
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #E68F59;
+}
+
+nav ul li.logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.language-selector button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    background-color: #04BADE;
+    color: white;
+    cursor: pointer;
+}
+
+.language-selector button:hover {
+    border-color: #E68F59;
+}
+
+h1 {
+    font-weight: 900;
+    color: white;
+    border-bottom: 2px solid #E68F59;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-weight: 100;
+    color: white;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #08406F; /* Secciones con color principal */
+}
+
+#portafolio {
+    background-color: #08406F; /* Sección del portafolio */
+}
+
+#contacto {
+    background-color: #08406F; /* Sección de contacto */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+form label {
+    margin: 10px 0 5px;
+    color: #08406F;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #04BADE;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #E68F59;
+}
+
+.btn-curriculum {
+    display: inline-block;
+    background-color: #04BADE;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-curriculum:hover {
+    background-color: #E68F59;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    form {
+        margin-left: 0;
+    }
+}
