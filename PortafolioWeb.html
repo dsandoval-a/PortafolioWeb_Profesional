@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
    
 </head>
 <body>
+    
     <header>
-        <nav role="navigation">
-            <ul>
+        <nav class="main-nav" role="navigation">
+            <ul class="left-menu">
                 <li class="logo"><img src="Logo2.png" alt="Logo" /></li>
-                <li><a href="#inicio" data-lang-es="Inicio" data-lang-en="Home">Inicio</a></li>
-                <li><a href="#acerca" data-lang-es="Acerca" data-lang-en="About">Acerca</a></li>
-                <li><a href="#servicios" data-lang-es="Servicios" data-lang-en="Services">Servicios</a></li>
+                <li><a href="#acerca" data-lang-es="Sobre mí" data-lang-en="About me">Sobre mí</a></li>
+                <li><a href="#misionvision" data-lang-es="Misión & Visión" data-lang-en="Mision & Vision">Misión y Visión</a></li>
+                <li><a href="#valores" data-lang-es="Valores" data-lang-en="Values">Valores</a></li>
                 <li><a href="#portafolio" data-lang-es="Portafolio" data-lang-en="Portfolio">Portafolio</a></li>
                 <li><a href="#contacto" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a></li>
             </ul>
@@ -25,53 +26,157 @@
             </div>
         </nav>
     </header>
+    
 
     <main>
-        <section id="inicio">
-            <h1>Bienvenido</h1>
-            <p>Esta es la sección de inicio.</p>
-        </section>
-
         <section id="acerca">
             <h1>Sobre mí</h1>
-            <p>Desarrollador web con una sólida habilidad en el desarrollo backend y la gestión de bases de datos.</p>
-            <!-- Botón de descarga del currículum -->
-            <a href="Curriculum.pdf" download="Curriculum.pdf" class="btn-curriculum">Descargar Currículum</a>
-            <a href="Resume.pdf" download="Resume.pdf" class="btn-curriculum">Download Resume</a>
-
+            <div class="acerca-contenido">
+                <div class="acerca-texto">
+                    <p>Hola, mi nombre es</p>
+                    <p> <strong><span style="color: #E68F59;"> Daniel Sandoval Araya</strong></p>
+                    <p>Desarrollador web con una <br>
+                        sólida habilidad en el desarrollo <br> backend y 
+                        la gestión de bases de datos.</p>
+                    <!-- Botón de descarga del currículum -->
+                    <div class="acerca-botones">
+                        <a href="Curriculum.pdf" download="Curriculum.pdf" class="btn-curriculum">Descargar Currículum</a>
+                        <a href="Resume.pdf" download="Resume.pdf" class="btn-curriculum">Download Resume</a>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <!-- Añade tus imágenes del carousel aquí -->
+                            <img src="html.png" alt="Image 1">
+                            <img src="css.png" alt="Image 2">
+                            
+                            <img src="js.webp" alt="Image 3">
+                            <img src="sql2.png" alt="Image 4">
+                            <img src="github.png" alt="Image 5">
+                            <img src="bootstrap.jpg" alt="Image 6">
+                            <img src="javafx.png" alt="Image 7">
+                            <img src="java.png" alt="Image 8">
+                            <img src="c++.png" alt="Image 9">
+                            <img src="cs.png" alt="Image 10">
+                            <img src="mongo-DB.png" alt="Image 11">
+                            <img src="nodejs.png" alt="Image 12">
+                        </div>
+                        <button class="carousel-control prev">❮</button>
+                        <button class="carousel-control next">❯</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+        
 
-        <section id="servicios">
+        <section id="misionvision">
+            <h1>Misión & Visión</h1>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Misión</h3>
+                    <p>Desarrollar soluciones prácticas, funcionales y mantenibles para la empresa que reflejen mis conocimientos en proyectos reales.</p>
+                </div>
+                <div class="card">
+                    <h3>Visión</h3>
+                    <p>Marcar una huella significativa en el ámbito tecnológico, impactando positivamente a la empresa y sirviendo de inspiración para futuros profesionales en el desarrollo de software.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="valores">
             <h1>Valores</h1>
-            <p>Trabajo en Equipo</p>
-            <p>Respeto</p>
-            <p>Honestidad</p>
-            <p>Perseverancia</p>
-            <p>Lealtad</p>
-
+            <div class="valores-container">
+                <div class="valor-card">Trabajo en Equipo</div>
+                <div class="valor-card">Respeto</div>
+                <div class="valor-card">Honestidad</div>
+                <div class="valor-card">Perseverancia</div>
+                <div class="valor-card">Lealtad</div>
+                <div class="valor-card">Amabilidad</div>
+            </div>
         </section>
+        
 
         <section id="portafolio">
             <h1>Portafolio</h1>
-            <p>Muestra de nuestros trabajos.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h2>Exploradores de lo Desconocido</h2>
+                    <img src="Exploradores de lo Desconocido.png" alt="Exploradores de lo Desconocido" class="card-img">
+
+                    <p>El juego trata de un astronauta John que es enviado a evaluar la habitabilidad del planeta CBF 12.2023.02.</p>
+                    <p>| C# | Unity | ASP.NET |</p>
+                    <a href="https://github.com/dsandoval-a/ProyectoPatrones-Juego.git" class="btn">Ver en GitHub</a>
+                </div>
+                <div class="card">
+                    <h2>Sistema Universitario FrontEnd</h2>
+                    <img src="SisUFront.png" alt="Sistema Universitario FrontEnd" class="card-img">
+
+                    <p>En este proyecto se realizo el FrontEnd del Sistema Universitario que da mantenimiento de cursos y carreras de un sistema de gestión académica.</p>
+                    <p>| HTML | CSS | Javascript |</p>
+                    <a href="https://github.com/dsandoval-a/Sistema-Universitario.git" class="btn">Ver en GitHub</a>
+                </div>
+                <div class="card">
+                    <h2>Sistema Universitario BackEnd</h2>
+                    <img src="SistUBack.jpg" alt="Sistema Universitario BackEnd" class="card-img">
+
+                    <p>En este proyecto se realizo el BackEnd del Sistema Universitario que da mantenimiento de cursos y carreras de un sistema de gestión académica.</p>
+                    <p>| MongoDB | NodeJS | Javascript |</p>
+                    <a href="https://github.com/dsandoval-a/Sistema-Universitario-BackEnd.git" class="btn">Ver en GitHub</a>
+                </div>
+                <div class="card">
+                    <h2>Portafolio Web</h2>
+                    <img src="PortWeb.PNG" alt="Sistema Universitario BackEnd" class="card-img">
+
+                    <p>Se realizo un portafolio web donde se muestran informacion esencial de mi persona. Dicho portafolio web fue hecho para mostrar las diferentes habilidades tecnicas, perfil profesional y valores. </p>
+                    <p>| HTML | CSS | Javascript |</p>
+                    <a href="https://github.com/dsandoval-a/PortafolioWeb.git" class="btn">Ver en GitHub</a>
+
+                </div>
+                <div class="card">
+                    <h2>Libreria</h2>
+                   <img src="ED.PNG" alt="Sistema Universitario BackEnd" class="card-img">
+
+                    <p>Proyecto grupal donde se elaboro una sistema de gestion de una libreria. </p>
+                    <p>| C++ |</p>
+                    <a href="https://github.com/dsandoval-a/Libreria.git" class="btn">Ver en GitHub</a>
+                </div>
+                <div class="card">
+                    <h2>RexMunch</h2>
+                    <img src="rexmunch.png" alt="Sistema Universitario BackEnd" class="card-img">
+
+                    <p>Rex-Munch es un proyecto grupal donde se nos pidio hacer una pagina web. Decidimos hacer un sistema online para hacer pedidos, similar a lo que conoce como UberEats.</p>
+                    <p>| HTML | CSS | Javascript | MongoDB | Postman |</p>
+                    <a href="https://github.com/dsandoval-a/Rex-Munch.git" class="btn">Ver en GitHub</a>
+                </div>
+            </div>
         </section>
+        
 
         <section id="contacto">
-        <h1>Contacto</h1>
-        <form id="contact-form" action="https://formspree.io/f/xanwjdzr" method="POST">
-            <label for="name">Nombre Completo:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="form-status"></p>
-    </section>
+            <h1>Contacto</h1>
+            <div class="contacto-container">
+                <form id="contact-form" action="https://formspree.io/f/xanwjdzr" method="POST">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="contact-image">
+                    <img src="costa rica.jpg" alt="Imagen de contacto">
+                </div>
+            </div>
+            <p id="form-status"></p>
+        </section>
+        
 
     <script>
         // Manejo de la respuesta del formulario
@@ -99,8 +204,26 @@
         });
     </script>
 
+<footer>
+    <div class="footer-content">
+        <a href="https://github.com/dsandoval-a" target="_blank" class="footer-btn" aria-label="Visita mi GitHub">
+            <img src="github-icon.png" alt="GitHub" class="footer-icon" /> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/dsandoval7610" target="_blank" class="footer-btn" aria-label="Visita mi LinkedIn">
+            <img src="linkedin-icon.png" alt="LinkedIn" class="footer-icon" /> LinkedIn
+        </a>
+        <a href="https://wa.me/50686488146" target="_blank" class="footer-btn" aria-label="Contáctame en WhatsApp">
+            <img src="whatsapp2.jpg" alt="WhatsApp" class="footer-icon" /> WhatsApp
+        </a>
+    </div>
+</footer>
+
+    
+ <button id="scrollTopBtn" aria-label="Scroll to top">⬆</button>
+
 
     <script src="index.js"></script>
+    <script src="three.js"></script>
 
  
 </body>

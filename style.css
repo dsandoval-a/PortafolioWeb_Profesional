@@ -7,6 +7,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 header {
     background-color: #04BADE; /* Header en color secundario */
     padding: 10px 0;
@@ -17,38 +19,46 @@ header {
     z-index: 1000;
 }
 
-nav ul {
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Ajusta el ancho si es necesario */
+    margin: 0 auto; /* Centra el contenido del nav */
+}
+
+.left-menu {
     list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.left-menu li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.left-menu li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+.left-menu li a:hover {
     color: #E68F59;
 }
 
-nav ul li.logo img {
-    height: 40px;
-    margin-right: 20px;
+.left-menu .logo img {
+    height: 60px;
+    width: 60px;
+    margin-right: 240px;
 }
 
 .language-selector {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: 0; /* Ajusta el margen si es necesario */
 }
 
 .language-selector button {
@@ -64,8 +74,10 @@ nav ul li.logo img {
     border-color: #E68F59;
 }
 
+
 h1 {
-    font-weight: 900;
+    font-size: 55px;
+    font-weight: 700;
     color: white;
     border-bottom: 2px solid #E68F59;
     display: inline-block;
@@ -83,15 +95,265 @@ section {
     background-color: #08406F; /* Secciones con color principal */
 }
 
-#portafolio {
-    background-color: #08406F; /* Sección del portafolio */
+
+
+
+#acerca {
+    background-color: #08406F;
+    padding: 60px 20px;
+    text-align: center; /* Centra el título */
 }
+
+
+#acerca h1 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+    display: inline-block; /* Asegura que el título esté centrado */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E68F59;
+display: inline-block;}
+
+.acerca-contenido {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos (texto y carrusel) */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.acerca-texto {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px; /* Separa el texto del carrusel */
+    color: white;
+    margin-left: 10px;
+}
+
+.acerca-texto p {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.acerca-botones {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.acerca-botones .btn-curriculum {
+    background-color: #04BADE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.acerca-botones .btn-curriculum:hover {
+    background-color: #E68F59;
+}
+
+.about-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    max-width: 400px; /* Define el ancho máximo del carrusel */
+}
+
+.carousel {
+    position: relative;
+    width: 400px; /* Ancho específico del carrusel */
+    height: 400px; /* Alto específico del carrusel */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes llenen el contenedor del carrusel */
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+/*Mision Vision*/
+#misionvision {
+    padding: 50px 20px;
+    background-color: #08406F; /* Color de fondo de la sección */
+    text-align: center;
+}
+
+#misionvision h1 {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #E68F59;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacio entre las cartas */
+    margin-top: 50px;
+    margin-bottom: -70px;
+
+}
+
+.card {
+    background-color: #ffffff; /* Fondo blanco para las cartas */
+    color: #E68F59; /* Color del texto */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 400px;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #E68F59;
+
+    
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+#valores {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #08406F;
+    color: white;
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+    
+}
+
+.valor-card {
+    background-color: #04BADE; /* Color de las cartas */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/*Portafolio*/
+
+#portafolio {
+    text-align: center;
+    padding: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #04BADE;
+    border-bottom: 2px solid #E68F59;
+
+    
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: #E68F59;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #04BADE;
+}
+
+/* Ajustar la distribución de las cartas para pantallas más pequeñas */
+
+
+
+/*Contacto*/
 
 #contacto {
     background-color: #08406F; /* Sección de contacto */
+   
 }
 
 /* Estilos para el formulario */
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -100,9 +362,9 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0;
-    margin-left: 20px;
+    width: 100%;
+    margin-right: -200px;
+
 }
 
 form label {
@@ -132,6 +394,17 @@ form button:hover {
     background-color: #E68F59;
 }
 
+.contact-image img {
+    max-width: 470px;
+    height: 335px;
+    border-radius: 5px;
+    margin-left: 250px;
+    border-radius: 1%;
+
+    
+}
+
+
 .btn-curriculum {
     display: inline-block;
     background-color: #04BADE;
@@ -145,6 +418,75 @@ form button:hover {
 .btn-curriculum:hover {
     background-color: #E68F59;
 }
+
+
+/*Footer*/
+
+footer {
+    background-color: #04BADE; /* Color de fondo del footer */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: #04BADE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #E68F59;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+#scrollTopBtn {
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Alto del botón, igual que el ancho */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Hacer que sea completamente redondo */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+    background-color: #04BADE; /* Color secundario */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Oculto por defecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #E68F59; /* Color de hover */
+}
+
+
+
 
 /* Diseño responsivo */
 @media (max-width: 768px) {
@@ -163,5 +505,20 @@ form button:hover {
 
     form {
         margin-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
     }
 }

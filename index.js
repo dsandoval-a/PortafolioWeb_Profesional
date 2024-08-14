@@ -12,3 +12,20 @@ function setLanguage(lang) {
 // Configurar el idioma predeterminado en español
 setLanguage('es');
 
+// Mostrar u ocultar el botón en función del scroll
+window.onscroll = function() {
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+// Función para el scroll hacia arriba
+document.getElementById("scrollTopBtn").onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
