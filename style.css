@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Ajusta el ancho si es necesario */
+    width: 90%; /* Ajusta el ancho */
     margin: 0 auto; /* Centra el contenido del nav */
 }
 
@@ -58,7 +58,7 @@ header {
 .language-selector {
     display: flex;
     align-items: center;
-    margin-top: 0; /* Ajusta el margen si es necesario */
+    margin-top: 0; 
 }
 
 .language-selector button {
@@ -92,7 +92,7 @@ p {
 section {
     padding: 100px 20px;
     text-align: center;
-    background-color: #08406F; /* Secciones con color principal */
+    background-color: #08406F; 
 }
 
 
@@ -166,10 +166,7 @@ display: inline-block;}
     max-width: 400px; /* Define el ancho máximo del carrusel */
 }
 
-#parrafo {
-    white-space: pre-wrap
-    ;
-  }
+
 
 .carousel {
     position: relative;
@@ -277,7 +274,7 @@ display: inline-block;}
 }
 
 .valor-card {
-    background-color: #04BADE; /* Color de las cartas */
+    background-color: #04BADE; 
     border-radius: 10px;
     padding: 20px;
     width: 250px;
@@ -339,18 +336,17 @@ display: inline-block;}
     background-color: #04BADE;
 }
 
-/* Ajustar la distribución de las cartas para pantallas más pequeñas */
 
 
 
 /*Contacto*/
 
 #contacto {
-    background-color: #08406F; /* Sección de contacto */
+    background-color: #08406F; 
    
 }
 
-/* Estilos para el formulario */
+
 .contacto-container {
     display: flex;
     justify-content: space-between;
@@ -474,7 +470,7 @@ footer {
     bottom: 40px;
     right: 40px;
     z-index: 1000;
-    background-color: #04BADE; /* Color secundario */
+    background-color: #04BADE; /* Color */
     color: white;
     border: none;
     padding: 15px;
