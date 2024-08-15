@@ -166,6 +166,11 @@ display: inline-block;}
     max-width: 400px; /* Define el ancho máximo del carrusel */
 }
 
+#parrafo {
+    white-space: pre-wrap
+    ;
+  }
+
 .carousel {
     position: relative;
     width: 400px; /* Ancho específico del carrusel */
@@ -489,7 +494,7 @@ footer {
 
 
 /* Diseño responsivo */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -521,140 +526,5 @@ footer {
     .card-container {
         grid-template-columns: 1fr;
     }
-}*/
-
-
-/* Estilos para tablets */
-@media (max-width: 1024px) {
-    .main-nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .left-menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .left-menu li {
-        margin: 10px 0;
-    }
-
-    .acerca-contenido {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .acerca-texto {
-        text-align: center;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .about-content {
-        justify-content: center;
-    }
-
-    .cards-container {
-        flex-direction: column;
-        gap: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .carousel {
-        width: 100%;
-        height: auto;
-    }
 }
 
-/* Estilos para móviles */
-/* Estilos para móviles */
-@media (max-width: 480px) {
-    /* Ajustes generales */
-    header {
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    .main-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    .left-menu {
-        width: 100%;
-        padding: 10px;
-        background-color: #08406F; /* Mantén el color de fondo */
-        text-align: center;
-    }
-
-    .left-menu ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    .left-menu li {
-        margin: 10px 0;
-        padding: 5px 0;
-        width: 100%;
-    }
-
-    .left-menu li a {
-        display: block;
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .logo img {
-        max-width: 50px; /* Ajusta el tamaño del logo */
-        margin: 0 auto 10px;
-    }
-
-    .language-selector {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .language-selector button {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
-
-    /* Otros ajustes */
-    h1 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .cards-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-    }
-
-    .contacto-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    form {
-        width: 100%;
-    }
-}

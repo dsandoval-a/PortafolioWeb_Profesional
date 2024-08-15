@@ -1,5 +1,5 @@
 function setLanguage(lang) {
-    const elements = document.querySelectorAll('a[data-lang-es], a[data-lang-en]');
+    const elements = document.querySelectorAll('[data-lang-es], [data-lang-en]');
     elements.forEach(element => {
         element.textContent = element.getAttribute(`data-lang-${lang}`);
     });
@@ -12,6 +12,9 @@ function setLanguage(lang) {
 // Configurar el idioma predeterminado en español
 setLanguage('es');
 
+
+
+  
 // Mostrar u ocultar el botón en función del scroll
 window.onscroll = function() {
     var scrollTopBtn = document.getElementById("scrollTopBtn");
